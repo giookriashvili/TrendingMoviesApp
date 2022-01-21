@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "811578705917",
+    "project_id": "top-trending-movies-cata-3442f",
+    "storage_bucket": "top-trending-movies-cata-3442f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811578705917:android:4735a063d7f51be740fb94",
+        "android_client_info": {
+          "package_name": "com.example.toptrendingmoviescatalog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811578705917-tq1bpk66a73g494i8j908hu3qioki2sj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0ypaspOx_JFWHvq-rGMS1vLq39nNGPek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811578705917-tq1bpk66a73g494i8j908hu3qioki2sj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
