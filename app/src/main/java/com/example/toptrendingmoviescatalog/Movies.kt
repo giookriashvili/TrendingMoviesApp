@@ -1,23 +1,23 @@
 package com.example.toptrendingmoviescatalog
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.toptrendingmoviescatalog.Models.Movie
 import com.example.toptrendingmoviescatalog.Models.MovieResponse
 import com.example.toptrendingmoviescatalog.services.MovieApiInterface
 import com.example.toptrendingmoviescatalog.services.MovieApiService
-import kotlinx.android.synthetic.main.activity_logged.*
+import kotlinx.android.synthetic.main.movies.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class logged : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_logged)
+class Movies : Fragment(R.layout.movies) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-        rv_movies_list.layoutManager = LinearLayoutManager(this)
+        rv_movies_list.layoutManager = LinearLayoutManager(context)
         rv_movies_list.setHasFixedSize(true)
         getMovieData { movies: List<Movie> ->
             rv_movies_list.adapter = MovieAdapter(movies)

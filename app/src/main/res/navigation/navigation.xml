@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/welcome">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.toptrendingmoviescatalog.Login"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_login_to_forgotPassword"
+            app:destination="@id/forgotPassword" />
+        <action
+            android:id="@+id/action_login_to_logged"
+            app:destination="@id/movies" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassword"
+        android:name="com.example.toptrendingmoviescatalog.forgotPassword"
+        android:label="activity_forgot_password"
+        tools:layout="@layout/activity_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPassword_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/movies"
+        android:name="com.example.toptrendingmoviescatalog.Movies"
+        android:label="activity_logged"
+        tools:layout="@layout/movies" />
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.toptrendingmoviescatalog.register"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" >
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcome"
+        android:name="com.example.toptrendingmoviescatalog.Welcome"
+        android:label="Welcome"
+        tools:layout="@layout/welcome">
+        <action
+            android:id="@+id/action_welcome_to_register"
+            app:destination="@id/register"/>
+        <action
+            android:id="@+id/action_welcome_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_welcome_to_movies"
+            app:destination="@id/movies" />
+    </fragment>
+    <fragment
+        android:id="@+id/favorites"
+        android:name="com.example.toptrendingmoviescatalog.Favorite"
+        android:label="Favorite"
+        tools:layout="@layout/favorite"/>
+</navigation>

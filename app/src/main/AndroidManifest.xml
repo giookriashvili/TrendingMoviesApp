@@ -12,19 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TopTrendingMoviesCatalog">
         <activity
-            android:name=".MovieAdapter"
-            android:exported="true" />
-        <activity
-            android:name=".logged"
-            android:exported="true" />
-        <activity
-            android:name=".register"
-            android:exported="true" />
-        <activity
-            android:name=".forgotPassword"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Main"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

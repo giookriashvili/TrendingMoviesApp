@@ -53,15 +53,15 @@
         app:layout_constraintTop_toBottomOf="@+id/movie_title"
         app:layout_constraintVertical_bias="0.864" />
 
-    <ImageView
-        android:id="@+id/star"
+    <Button
+        android:id="@+id/remove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="50dp"
-        android:src="@drawable/ic_baseline_star_outline_24"
+        android:backgroundTint="#FFEB3B"
+        android:text="remove"
+        android:textColor="@color/light_black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
