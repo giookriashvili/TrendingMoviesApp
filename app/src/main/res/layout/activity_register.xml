@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/light_black">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,8 +23,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="E-mail"
-            android:textColorHint="@color/black"
-            android:textColor="@color/black"
+            android:textColorHint="#FFEB3B"
+            android:textColor="#FFEB3B"
             android:textSize="25sp"
             android:drawableLeft="@drawable/ic_baseline_mail_outline_24" />
 
@@ -33,8 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="Password"
-            android:textColorHint="@color/black"
-            android:textColor="@color/black"
+            android:textColorHint="#FFEB3B"
+            android:textColor="#FFEB3B"
             android:textSize="25sp"
             android:drawableLeft="@drawable/ic_baseline_lock_24" />
 
@@ -44,10 +45,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="Repeat Password"
-            android:textColorHint="@color/black"
-            android:textColor="@color/black"
+            android:textColorHint="#FFEB3B"
+            android:textColor="#FFEB3B"
             android:textSize="25sp"
-            android:drawableLeft="@drawable/ic_baseline_lock_reset_24" />
+            android:drawableLeft="@drawable/ic_baseline_lock_reset_24"/>
 
         <Button
             android:id="@+id/register"
@@ -55,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Register"
-            android:textColor="@color/black"
+            android:textColor="#FFEB3B"
             android:textSize="25sp"
             style="@style/Widget.AppCompat.Button.Borderless"/>
 
@@ -63,8 +64,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:text="Notes App"
-            android:textColor="@color/black"
+            android:text="Popular Movies Catalog"
+            android:textColor="#FFEB3B"
             android:layout_marginTop="330dp"/>
 
     </LinearLayout>

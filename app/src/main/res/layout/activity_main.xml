@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/light_black">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,18 +18,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Welcome"
-            android:textSize="50sp"
-            android:layout_marginBottom="20dp" />
-
         <EditText
             android:id="@+id/loginEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="E-mail"
+            android:textColorHint="#FFEB3B"
+            android:textColor="#FFEB3B"
             android:inputType="textEmailAddress"
             android:textSize="25sp"
             android:drawableLeft="@drawable/ic_baseline_mail_outline_24" />
@@ -38,6 +34,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="********"
+            android:textColorHint="#FFEB3B"
+            android:textColor="#FFEB3B"
             android:inputType="textPassword"
             android:textSize="25sp"
             android:drawableLeft="@drawable/ic_baseline_lock_24" />
@@ -48,7 +46,7 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:textSize="30sp"
-            android:textColor="@color/black"
+            android:textColor="#FFEB3B"
             style="@style/Widget.AppCompat.Button.Borderless"/>
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,19 +59,19 @@
                 android:layout_height="wrap_content"
                 android:text="password"
                 android:textSize="15sp"
-                android:textColor="@color/black"
+                android:textColor="#FFEB3B"
                 style="@style/Widget.AppCompat.Button.Borderless"/>
             <View
                 android:layout_width="1dp"
                 android:layout_height="25dp"
-                android:background="@color/black" />
+                android:background="#FFEB3B" />
             <Button
                 android:id="@+id/startRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Register"
                 android:textSize="15sp"
-                android:textColor="@color/black"
+                android:textColor="#FFEB3B"
                 style="@style/Widget.AppCompat.Button.Borderless"/>
 
 
@@ -86,8 +84,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="Popular Movie catalog"
-        android:textColor="@color/black"
+        android:text="Popular Movies catalog"
+        android:textColor="#FFEB3B"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
